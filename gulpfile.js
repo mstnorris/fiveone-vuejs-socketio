@@ -4,6 +4,7 @@ elixir(function(mix) {
     mix.scripts([
         'vendor/vue.js',
         'vendor/vue-resource.js',
+        'vendor/socket.io.js',
         'app.js'
     ], 'public/js/all.js');
 
