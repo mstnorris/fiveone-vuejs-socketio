@@ -1,23 +1,21 @@
-## Laravel PHP Framework
+## Laravel, Vue.js and Socket.io
 
-[![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
-[![Total Downloads](https://poser.pugx.org/laravel/framework/downloads.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Stable Version](https://poser.pugx.org/laravel/framework/v/stable.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Unstable Version](https://poser.pugx.org/laravel/framework/v/unstable.svg)](https://packagist.org/packages/laravel/framework)
-[![License](https://poser.pugx.org/laravel/framework/license.svg)](https://packagist.org/packages/laravel/framework)
+> I have put this repo together so that others can get started easily with Laravel and Vue.js and Socket.io
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as authentication, routing, sessions, queueing, and caching.
+1. Clone the repo
+2. Add a **.env** file and add your database credentials (an example below if you're using Homestead)
 
-Laravel is accessible, yet powerful, providing powerful tools needed for large, robust applications. A superb inversion of control container, expressive migration system, and tightly integrated unit testing support give you the tools you need to build any application with which you are tasked.
+```
+DB_HOST=192.168.10.10
+DB_DATABASE=fiveone-vuejs-socketio
+DB_USERNAME=homestead
+DB_PASSWORD=secret
 
-## Official Documentation
+BROADCAST_DRIVER=redis
+```
 
-Documentation for the framework can be found on the [Laravel website](http://laravel.com/docs).
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](http://laravel.com/docs/contributions).
-
-### License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
+3. Run composer install/update
+4. Run `npm install` (might need to use `sudo npm install`)
+5. Migrate your database `php artisan migrate`
+6. Run `gulp` to compile the resources/assets into your public/ directories
+7. I think you should be good to go
