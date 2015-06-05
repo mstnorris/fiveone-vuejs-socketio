@@ -50,7 +50,7 @@
         <div class="body">@{{ message }}</div>
     </article>
 
-    <pre>@{{ $data | json }}</pre>
+    {{--<pre>@{{ $data | json }}</pre>--}}
 </div>
 
 <script src="{{ elixir('js/all.js') }}"></script>

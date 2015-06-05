@@ -1,6 +1,4 @@
-<?php
-
-namespace App\Http\Controllers\Auth;
+<?php namespace App\Http\Controllers\Auth;
 
 use App\User;
 use Validator;
@@ -21,6 +19,8 @@ class AuthController extends Controller
     */
 
     use AuthenticatesAndRegistersUsers;
+
+    protected $redirectTo = '/guestbook';
 
     /**
      * Create a new authentication controller instance.

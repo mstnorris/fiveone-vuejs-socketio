@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>FiveOne Socket.io</title>
+    <title>FiveOne Vue.js Socket.io</title>
 </head>
 <body>
 @yield('content')
