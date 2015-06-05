@@ -24,3 +24,10 @@ BROADCAST_DRIVER=redis
 10. I think you should be ready to test in the browser
 11. **/guestbook** to sign the guestbook (Vue.js)
 12. **/fire** and **/test** to, well, _fire_ and event and _test_ that you can see it. (All the while you can see the output in the command line)
+
+---
+
+### To do
+
+1. Integrate Vue.js and Socket.io so notifications are sent to logged in users when there is a new post.
+2. Install supervisord or similer to keep socket alive.
