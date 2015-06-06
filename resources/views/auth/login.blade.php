@@ -1,27 +1,42 @@
 @extends('layouts.master')
 
 @section('content')
-    <!-- resources/auth/login.blade.php -->
+    <div class="container">
+        <div class="row">
+            <form method="POST" action="/auth/login" class="form-horizontal">
 
-    <form method="POST" action="/auth/login">
-        {!! csrf_field() !!}
+                {!! csrf_field() !!}
 
-        <div>
-            Email
-            <input type="email" name="email" value="{{ old('email') }}">
+                <div class="form-group">
+                    <label for="email" class="col-sm-2 control-label">Email</label>
+
+                    <div class="col-sm-10">
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Email"
+                               value="{{ old('email') }}">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="password" class="col-sm-2 control-label">Password</label>
+
+                    <div class="col-sm-10">
+                        <input type="password" class="form-control" id="password" name="password" placeholder="Password">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox"> Remember me
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                        <button type="submit" class="btn btn-default">Sign in</button>
+                    </div>
+                </div>
+            </form>
         </div>
-
-        <div>
-            Password
-            <input type="password" name="password" id="password">
-        </div>
-
-        <div>
-            <input type="checkbox" name="remember"> Remember Me
-        </div>
-
-        <div>
-            <button type="submit">Login</button>
-        </div>
-    </form>
+    </div>
 @endsection

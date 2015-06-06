@@ -2,12 +2,22 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>FiveOne Vue.js Socket.io</title>
+
+    <title>Something Good Happened Today</title>
+    <link rel="stylesheet" href="{{ elixir('css/all.css') }}">
+    @yield('header')
 </head>
 <body>
+
+@include('layouts.partials.navigation')
+
 @yield('content')
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-@yield('footer')
+<footer class="footer">
+    <div class="container">
+        <p class="text-muted">Copyright &copy; {{ date('Y') }} Something Good Happened Today. All rights reserved.</p>
+    </div>
+</footer>
+<script src="{{ elixir('js/all.js') }}"></script>
 </body>
 </html>
