@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Providers;
+namespace SomethingGoodHappenedToday\Providers;
 
 use Illuminate\Support\ServiceProvider;
 

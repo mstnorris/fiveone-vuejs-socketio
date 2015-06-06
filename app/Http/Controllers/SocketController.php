@@ -1,6 +1,6 @@
-<?php namespace App\Http\Controllers;
+<?php namespace SomethingGoodHappenedToday\Http\Controllers;
 
-use App\Http\Controllers\Controller;
+use SomethingGoodHappenedToday\Http\Controllers\Controller;
 
 class SocketController extends Controller
 {

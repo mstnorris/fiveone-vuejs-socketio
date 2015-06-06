@@ -1,6 +1,4 @@
-<?php
-
-namespace App;
+<?php namespace SomethingGoodHappenedToday;
 
 use Illuminate\Database\Eloquent\Model;
 

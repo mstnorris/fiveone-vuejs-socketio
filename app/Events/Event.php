@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Events;
+namespace SomethingGoodHappenedToday\Events;
 
 abstract class Event
 {

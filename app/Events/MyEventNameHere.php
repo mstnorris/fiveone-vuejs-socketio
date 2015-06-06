@@ -1,6 +1,6 @@
-<?php namespace App\Events;
+<?php namespace SomethingGoodHappenedToday\Events;
 
-use App\Events\Event;
+use SomethingGoodHappenedToday\Events\Event;
 use Illuminate\Contracts\Broadcasting\ShouldBroadcast;
 use Illuminate\Queue\SerializesModels;
 

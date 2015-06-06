@@ -1,8 +1,8 @@
-<?php namespace App\Http\Controllers\Auth;
+<?php namespace SomethingGoodHappenedToday\Http\Controllers\Auth;
 
-use App\User;
+use SomethingGoodHappenedToday\User;
 use Validator;
-use App\Http\Controllers\Controller;
+use SomethingGoodHappenedToday\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\AuthenticatesAndRegistersUsers;
 
 class AuthController extends Controller
@@ -20,7 +20,7 @@ class AuthController extends Controller
 
     use AuthenticatesAndRegistersUsers;
 
-    protected $redirectTo = '/guestbook';
+    //protected $redirectTo = '/guestbook';
 
     /**
      * Create a new authentication controller instance.
