@@ -29,7 +29,7 @@ new Vue({
 
     methods: {
         fetchMessages: function() {
-            this.$http.get('api/messages', function(messages) {
+            this.$http.get('/api/messages', function(messages) {
                 this.$set('messages', messages);
             })
         },
@@ -45,7 +45,7 @@ new Vue({
 
             this.submitted = true;
 
-            this.$http.post('api/messages', message);
+            this.$http.post('/api/messages', message);
         }
     }
 });
